@@ -14,6 +14,11 @@ fun main(args: Array<String>){
         println("Hello, ${args[0]}!")
 
     println("Hello, ${if (args.size > 0) args[0] else "someone"}!")
+
+
+    val person = Person("Bob", true);
+    println(person.name)
+    println(person.isMarried)
 }
 
 /*
@@ -51,9 +56,9 @@ fun counting(){
     languages.add("Kotlin")
 }
 
-
 class Person(
     val name: String,       // 읽기 전용 프로퍼티
     var isMarried: Boolean  // 쓸 수 있는 프로퍼티
 )
+
 
